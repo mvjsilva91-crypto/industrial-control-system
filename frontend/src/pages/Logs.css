@@ -1,0 +1,37 @@
+.logs-container {
+  padding: 20px;
+  background:white;
+  color: black;
+}
+
+.logs-container h1 {
+  margin-bottom: 20px;
+}
+
+.tabela-logs {
+  width: 100%;
+  border-collapse: collapse;
+
+  background:white;
+ 
+
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.tabela-logs th {
+  background: black;
+  color: white;
+  padding: 10px;
+  text-align: left;
+}
+
+.tabela-logs td {
+  padding: 10px;
+  border-bottom: 1px solid white;
+  color: black;
+}
+
+.tabela-logs tr:hover {
+  background: white;
+}

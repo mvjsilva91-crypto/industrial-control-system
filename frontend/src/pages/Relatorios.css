@@ -1,0 +1,102 @@
+.relatorios-page {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.h1-rel {
+  color: white;
+}
+
+/* HEADER */
+.header-section h1 {
+  /* color: #0f172a; */
+  margin-bottom: 4px;
+}
+
+.header-section .sub {
+  color: #64748b;
+  font-size: 0.95rem;
+}
+
+/* CARDS */
+.cards-grid {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.modern-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+
+  color: rgb(17, 19, 19);
+
+  flex: 1;
+  min-width: 250px; /* ajustado de 4500px */
+
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  transition: 0.2s;
+}
+
+.modern-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+}
+
+/* NUMERO */
+.numero {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0;
+}
+
+/* BADGES */
+.badge {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  width: fit-content;
+}
+
+.badge-positivo {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.badge-negativo {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+/* GRÁFICOS */
+.graficos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 24px;
+  margin-top: 30px;
+}
+
+.grafico-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  width: 100%;
+}
+
+.grafico-card h3 {
+  margin-bottom: 24px;
+  color: #0f172a;
+}

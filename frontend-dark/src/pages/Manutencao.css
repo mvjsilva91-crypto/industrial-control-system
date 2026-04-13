@@ -1,0 +1,97 @@
+.manutencao-container {
+  padding: 25px;
+  background: #0f172a;
+  min-height: 100vh;
+  color: white;
+}
+
+.manutencao-container h1 {
+  margin-bottom: 20px;
+  color: #38bdf8;
+}
+
+/* GRID */
+.grid-maquinas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+/* CARD */
+.maquina-card {
+  background: #1e293b;
+  padding: 18px;
+  border-radius: 14px;
+
+  border-left: 5px solid #38bdf8;
+
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  transition: 0.25s;
+}
+
+.maquina-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.4);
+}
+
+/* TITULO */
+.maquina-card h2 {
+  margin-bottom: 12px;
+  color: #e2e8f0;
+}
+
+/* TEXTO */
+.maquina-card p {
+  margin: 6px 0;
+  color: #94a3b8;
+  font-size: 14px;
+}
+
+/* STATUS BADGE */
+.status {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  margin-left: 8px;
+}
+
+/* CORES (dark) */
+.status.operando {
+  background: rgba(34,197,94,0.2);
+  color: #22c55e;
+}
+
+.status.manutencao {
+  background: rgba(245,158,11,0.2);
+  color: #f59e0b;
+}
+
+.status.parada {
+  background: rgba(239,68,68,0.2);
+  color: #ef4444;
+}
+
+/* BOTÃO */
+.maquina-card button {
+  margin-top: 12px;
+  width: 100%;
+
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+
+  background: #38bdf8;
+  color: black;
+
+  font-weight: bold;
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.maquina-card button:hover {
+  background: #0ea5e9;
+  transform: scale(1.03);
+}

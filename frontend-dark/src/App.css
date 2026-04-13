@@ -1,0 +1,803 @@
+body{
+margin:0;
+background:#243246;
+font-family:Arial;
+color:white;
+
+}
+
+.app{
+
+  height:100vh;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  transform: scale(1.1); 
+
+}
+
+.container{
+  width:100%;
+ 
+}
+
+
+
+
+/* TOPO */
+
+.topBar {
+  width: 100%;
+  max-width: 1241px;
+  height: 150px;
+
+  margin-top: -150px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background: #1e293b; /* COR PADRÃO */
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+
+  border-top: 5px solid #38bdf8; /* DESTAQUE PADRÃO */
+  border-left: 5px solid #38bdf8;
+  border-right: 5px solid #38bdf8;
+
+  box-shadow: 0 0 8px rgba(56, 189, 248, 0.3); /* AZUL PADRÃO */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  transition: all 0.2s ease;
+}
+
+.topBar:active {
+  box-shadow: 
+    inset 4px 4px 8px rgba(0,0,0,0.9), 
+    inset -4px -4px 8px rgba(255,255,255,0.05);
+}
+
+
+
+/* BOTAO HOME */
+
+.homeBtn {
+    
+    width:180px;
+    height:55px;
+     font-size:18px;
+    font-weight:bold;
+    position:absolute;
+    left:200px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 20px 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+     border-radius:10px;
+    transition: all .2s;
+    position: absolute;
+    border: none;
+    cursor: pointer;
+}
+
+.homeBtn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.homeBtn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.homeBtn.active{
+
+  background: #2563eb;
+  box-shadow: 
+    0 0 10px #3b82f6,
+    0 0 20px #3b82f6,
+    0 0 30px #3b82f6;
+}
+
+.homeBtn.active::after{
+
+  background: #2563eb;
+  box-shadow: 
+    0 0 10px #3b82f6,
+    0 0 20px #3b82f6,
+    0 0 30px #3b82f6;
+}
+
+.homeBtn-blue {
+    background: linear-gradient(145deg,#2563eb,#1d4ed8);
+    color: #fff;
+}
+
+.homeBtn::after {
+    content: "";
+    display: block;
+   
+    width:180px;
+    height:55px;
+    border-radius: 100px;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index:-1;
+    transition: all .4s;
+}
+
+.homeBtn-blue::after {
+    background-color:#2563eb;
+}
+
+.homeBtn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity:0;
+}
+
+.homeBtn-animated {
+    animation: moveInBottom 1s ease-out;
+    animation-fill-mode: backwards;
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity:0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity:1;
+        transform: translateY(0);
+    }
+}
+
+
+
+
+
+/* BOTAO SLEEP */
+
+.sleepBtn {
+    
+    width:180px;
+    height:55px;
+     font-size:18px;
+    font-weight:bold;
+    position:absolute;
+    right:200px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 20px 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius:10px;
+    transition: all .2s;
+   
+    border: none;
+    cursor: pointer;
+}
+
+.sleepBtn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.sleepBtn:active {
+  
+    transform: translateY(-1px);
+   
+}
+
+.sleepBtn.active{
+
+  background:#e05036;
+  box-shadow:0 0 12px #e78f3c;
+}
+
+.sleepBtn.active::after{
+
+  background:#e05036;
+  box-shadow:0 0 12px #e78f3c;
+}
+
+.sleepBtn-blue {
+    background: linear-gradient(145deg,#2563eb,#1d4ed8);
+    color: #fff;
+}
+
+.sleepBtn::after {
+    content: "";
+    display: block;
+   
+    width:180px;
+    height:55px;
+    border-radius: 100px;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index:-1;
+    transition: all .4s;
+}
+
+.sleepBtn-blue::after {
+    background-color:#2563eb;
+}
+
+.sleepBtn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity:0;
+}
+
+.sleep-animated {
+    animation: moveInBottom 1s ease-out;
+    animation-fill-mode: backwards;
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity:0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity:1;
+        transform: translateY(0);
+    }
+}
+
+
+
+
+/* PAINEIS */
+
+.panels{
+
+  width:100%;
+
+  display:flex;
+  justify-content:center;
+
+  gap:40px;
+
+  margin-top:40px;
+
+  
+
+}
+
+
+/* PAINEL */
+.panel{
+
+  width:350px;
+  height:450px;
+
+  margin-top: -20px;
+
+  background:#1e293b; /* PADRÃO DO SISTEMA */
+
+  border-radius:12px;
+  border-top: 5px solid #38bdf8;
+
+  padding:30px;
+
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+
+  box-shadow:
+  0 10px 25px rgba(0,0,0,0.6),
+  inset 0 1px 0 rgba(255,255,255,0.05); /* AJUSTADO */
+}
+
+
+
+/* PAINEL ROBOT */
+
+.panel-robot{
+
+  position:relative;
+  overflow:hidden;
+
+  width:350px;
+  height:450px;
+
+  margin-top: -20px;
+
+  border-radius:12px;
+
+  border-right: 1px solid #334155; 
+  border-top: 5px solid #38bdf8;
+
+  padding:30px;
+
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+
+  box-shadow:
+  0 10px 25px rgba(0,0,0,0.7),
+  inset 0 1px 0 rgba(255,255,255,0.05); /* SUAVIZADO */
+
+}
+
+
+/* IMAGEM TRANSPARENTE */
+.panel-robot::before{
+
+  content:"";
+
+  position:absolute;
+  inset:0;
+
+  background:rgba(15,23,42,0.85);
+
+  backdrop-filter:blur(2px);
+
+  z-index:0;
+
+}
+
+.panel-robot::after{
+
+  content:"";
+
+  position:absolute;
+  inset:0;
+
+  background-image:
+  linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+  linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+
+  background-size:25px 25px;
+
+  z-index:0;
+
+}
+
+
+/* CONTEÚDO NA FRENTE */
+
+.panel-robot *{
+  position:relative;
+  z-index:1;
+}
+
+
+/* LINHAS */
+
+.row{
+
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+
+  font-size:18px;
+
+}
+
+
+/* PAINEL tempSensor */
+
+.tempSensor{
+
+  position:relative;
+  overflow:hidden;
+
+  width:10px;
+  height:450px;
+
+   margin-top: -20px;
+
+  border-radius:12px;
+
+  padding:30px;
+
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+
+  box-shadow:
+  0 10px 25px rgba(0,0,0,0.7),
+  inset 0 1px 0 rgba(255,255,255,0.1);
+
+}
+
+/* SENSOR TEMPERATURA */
+
+.tempSensor{
+
+  display:flex;
+  align-items:center;
+  gap:20px;
+
+}
+
+/* TUBO DO TERMOMETRO */
+
+.thermometer{
+
+  width:40px;
+  height:160px;
+
+  background:#1e293b;
+
+  border-radius:20px;
+
+  position:relative;
+
+  overflow:hidden;
+
+  box-shadow:
+  inset 0 0 10px rgba(0,0,0,0.6);
+
+}
+
+/* NIVEL DA TEMPERATURA */
+
+.thermoFill{
+
+  position:absolute;
+  bottom:0;
+
+  width:100%;
+
+  background:linear-gradient(
+    to top,
+    #22c55e,
+    #facc15,
+    #ef4444
+  );
+
+  transition:height 1s ease;
+
+}
+
+/* TEXTO */
+
+.tempValue{
+
+  font-size:22px;
+  font-weight:bold;
+
+}
+
+
+/* BOTAO CIRCULAR */
+
+.circleBtn{
+
+  width:50px;
+  height:50px;
+
+  border-radius:50%;
+  border:none;
+
+  background:linear-gradient(145deg,#475569,#1e293b);
+
+  box-shadow:
+  inset -4px -4px 8px rgba(0,0,0,0.6),
+  inset 4px 4px 8px rgba(255,255,255,0.1);
+
+  cursor:pointer;
+
+  transition:0.2s;
+
+}
+
+.circleBtn:hover{
+  transform:scale(1.1);
+}
+
+.circleBtn.active{
+
+background: linear-gradient(145deg, #86efac, #22c55e);
+
+box-shadow:
+  inset -4px -4px 8px rgba(0,0,0,0.6),
+  inset 4px 4px 8px rgba(255,255,255,0.1);
+
+}
+
+
+
+/* LED */
+
+.led{
+
+  width:40px;
+  height:40px;
+
+  border-radius:50%;
+
+  background:#1e293b;
+
+}
+
+
+/* LED VERDE */
+
+.led.on{
+
+  background: radial-gradient(circle at 30% 30%, #a7f3d0, #22c55e);
+
+  box-shadow:
+  0 0 10px #22c55e,
+  0 0 20px #22c55e,
+  inset 0 -2px 2px rgba(0,0,0,0.4),
+  inset 0 2px 3px rgba(255,255,255,0.4);
+
+  transform: translateY(-2px);
+
+}
+
+
+/* RUNNING VERMELHO */
+
+.led.onRunning{
+
+  background: radial-gradient(circle at 30% 30%, #ffb4b4, #ff0000);
+
+  box-shadow:
+  0 0 10px #ff0000,
+  0 0 20px #ff0000,
+  inset 0 -2px 2px rgba(0,0,0,0.4),
+  inset 0 2px 3px rgba(255,255,255,0.4);
+
+  transform: translateY(-2px);
+
+}
+
+
+/* SLEEP AMARELO */
+
+.led.onSleep{
+
+  background: radial-gradient(circle at 30% 30%, #fff3a0, #facc15);
+
+  box-shadow:
+  0 0 10px #facc15,
+  0 0 20px #facc15,
+  inset 0 -2px 2px rgba(0,0,0,0.4),
+  inset 0 2px 3px rgba(255,255,255,0.4);
+
+  transform: translateY(-2px);
+
+}
+
+
+/* HOME AZUL */
+
+.led.onHome{
+
+background: linear-gradient(145deg, #bfdbfe, #2563eb);
+
+box-shadow:
+  0 0 15px #93c5fd,
+  0 0 35px #3b82f6,
+  inset -4px -4px 8px rgba(0,0,0,0.5),
+  inset 4px 4px 8px rgba(255,255,255,0.3);
+
+   transform: translateY(-2px);
+
+}
+
+/* LED ERRO */
+
+/* LED DE ERRO */
+
+.led.error{
+
+  background: radial-gradient(circle at 30% 30%, #ffb4b4, #ff0000);
+
+  box-shadow:
+  0 0 10px #ff0000,
+  0 0 20px #ff0000;
+
+  animation: blinkError 0.8s infinite;
+
+}
+
+
+/* ANIMAÇÃO DE PISCAR */
+
+@keyframes blinkError{
+
+  0%{
+    opacity:1;
+  }
+
+  50%{
+    opacity:0.2;
+  }
+
+  100%{
+    opacity:1;
+  }
+
+}
+
+
+/* DASHBOARD */
+
+.panel h2{
+
+  text-align:center;
+  margin-bottom:20px;
+  font-size:22px;
+
+}
+
+.panel span{
+
+  font-weight:500;
+
+}
+
+
+
+
+/* LAYOUT E SIDEBAR */
+
+/* LAYOUT DASHBOARD */
+
+.dashboard-layout{
+display:flex;
+width:100vw;
+height:100vh;
+}
+/* SIDEBAR */
+
+.sidebar {
+  width:260px;
+  background: #0f172a;
+  color:white;
+  padding:20px;
+  box-sizing:border-box;
+  border-right: 2px solid #334155;
+}
+
+.sidebar {
+  box-shadow: 2px 0 10px rgba(0,0,0,0.3);
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar h2{
+  margin-bottom:20px;
+ 
+}
+
+/* .btn-sidebar {
+  border-top: 3px solid #00d4ff;
+  border-radius: 8px;
+} */
+.btn-sidebar {
+  border-bottom: 3px solid #00d4ff;
+  border-radius: 6px;
+}
+
+.sidebar button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.sidebar button {
+  position: relative;
+}
+
+.sidebar button {
+  width: 100%;
+  /* border: none; */
+  background: transparent;
+  color: white;
+  text-align: left;
+  /* border-radius: 8px; */
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.sidebar button:focus {
+  outline: none;
+  /* box-shadow: 0 0 0 3px #38bdf8; */
+  /* border: 2px solid #38bdf8; */
+  /* border-right: 5px solid #00d4ff; */
+}
+
+/* Hover (efeito bonito) */
+.sidebar button:hover {
+  background: #00d4ff;
+
+  transform: scale(1.03);
+}
+
+
+/* Botão ativo */
+.sidebar button.ativo{
+  /* background: linear-gradient(135deg, #7dd3fc, #38bdf8); */
+  color: #00d4ff;
+  font-weight: bold;
+  font-size: 18px;
+  text-shadow: 0 0 1px rgba(0,0,0,0.5);
+  /* letter-spacing: 0.5px; */
+  text-transform: uppercase;
+}
+
+.sidebar button.ativo:hover{
+  /* background: linear-gradient(135deg, #7dd3fc, #38bdf8); */
+  color: white;
+  font-weight: bold;
+  
+}
+
+/* barra lateral */
+.sidebar button.ativo::after {
+  content: "";
+  position: absolute;
+  left: -20px;
+  top: 0;
+  width: 4px;
+  height: 100%;
+  background: #00d4ff;
+  border-radius: 4px;
+}
+
+/* ÁREA PRINCIPAL */
+
+.main-area{
+flex:1;
+padding:30px;
+box-sizing:border-box;
+overflow-y:auto;
+
+}
+
+/* BOTÃO SAIR QUE VAI PARA O LOGIN  */
+
+
+.sidebar .btn-logout {
+  margin-top: auto;
+  width: 100%;
+  padding: 12px;
+  border: none;
+  /* background: #3b82f6; */
+  color: white;
+  /* border-radius: 8px; */
+  border-bottom: 3px solid #00d4ff;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+/* hover */
+.sidebar .btn-logout:hover {
+  background: #00d4ff;
+  transform: scale(1.03);
+}
+
+.btn-logout {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+}

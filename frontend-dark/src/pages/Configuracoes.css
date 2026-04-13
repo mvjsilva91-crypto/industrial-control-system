@@ -1,0 +1,84 @@
+.config-container {
+  padding: 20px;
+  background: #0f172a;
+  min-height: 100vh;
+  color: white;
+}
+
+.config-container h1 {
+  margin-bottom: 20px;
+}
+
+/* CARD */
+.config-card {
+  background: #1e293b;
+  color: #e2e8f0;
+
+  padding: 20px;
+  margin-bottom: 15px;
+  border-radius: 12px;
+
+  border-left: 5px solid #38bdf8;
+  transition: 0.3s;
+}
+
+/* HOVER */
+.config-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+/* TÍTULO */
+.config-card h2 {
+  margin-bottom: 15px;
+  color: #38bdf8;
+}
+
+/* LABEL */
+.config-card label {
+  display: block;
+  margin-top: 10px;
+  font-weight: 500;
+  color: #94a3b8;
+}
+
+/* INPUT E SELECT */
+.config-card input,
+.config-card select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+
+  border-radius: 8px;
+  border: 1px solid #334155;
+
+  background: #020617;
+  color: white;
+}
+
+/* LINHA FLEX */
+.linha {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* BOTÃO */
+.btn-salvar {
+  margin-top: 15px;
+  padding: 10px 20px;
+
+  background: #38bdf8;
+  color: black;
+
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn-salvar:hover {
+  background: #0ea5e9;
+}

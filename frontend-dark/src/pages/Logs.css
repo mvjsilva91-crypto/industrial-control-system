@@ -1,0 +1,49 @@
+.logs-container {
+  padding: 20px;
+  background: #0f172a;
+  min-height: 100vh;
+  color: white;
+}
+
+/* TÍTULO */
+.logs-container h1 {
+  margin-bottom: 20px;
+}
+
+/* TABELA */
+.tabela-logs {
+  width: 100%;
+  border-collapse: collapse;
+  background: #1e293b;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* CABEÇALHO */
+.tabela-logs th {
+  background: #020617;
+  color: #38bdf8;
+  padding: 12px;
+  text-align: left;
+  font-weight: bold;
+}
+
+/* LINHAS */
+.tabela-logs td {
+  padding: 12px;
+  border-bottom: 1px solid #334155;
+  color: #e2e8f0;
+}
+
+/* HOVER */
+.tabela-logs tr:hover {
+  background: #334155;
+  transition: 0.2s;
+}
+
+/* LINHAS ALTERNADAS (zebra) */
+.tabela-logs tr:nth-child(even) {
+  background: #172033;
+}
+
+

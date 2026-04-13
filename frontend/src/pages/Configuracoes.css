@@ -1,0 +1,60 @@
+.config-container {
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.config-container h1 {
+  margin-bottom: 20px;
+}
+
+.config-card {
+  background: white;
+  color: black;
+
+  padding: 20px;
+  margin-bottom: 15px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.config-card h2 {
+  margin-bottom: 15px;
+}
+
+.config-card label {
+  display: block;
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+.config-card input,
+.config-card select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 6px;
+
+  border: 1px solid #ccc;
+}
+
+.linha {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-salvar {
+  margin-top: 10px;
+  padding: 10px 20px;
+
+  background: black;
+  color: white;
+
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn-salvar:hover {
+  background: #003f7a;
+}

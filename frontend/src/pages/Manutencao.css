@@ -1,0 +1,96 @@
+.manutencao-container {
+  padding: 25px;
+  background: #f1f5f9; /* fundo leve */
+  min-height: 100vh;
+}
+
+.manutencao-container h1 {
+  margin-bottom: 20px;
+  color: #0f172a;
+}
+
+/* GRID */
+.grid-maquinas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+/* CARD */
+.maquina-card {
+  background: #ffffff;
+  padding: 18px;
+  border-radius: 14px;
+
+  border: 1px solid #e2e8f0;
+
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  transition: 0.25s;
+}
+
+.maquina-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.08);
+}
+
+/* TITULO */
+.maquina-card h2 {
+  margin-bottom: 12px;
+  color: #0f172a;
+}
+
+/* TEXTO */
+.maquina-card p {
+  margin: 6px 0;
+  color: #475569;
+  font-size: 14px;
+}
+
+/* STATUS BADGE */
+.status {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  margin-left: 8px;
+}
+
+/* CORES PROFISSIONAIS */
+.status.operando {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.status.manutencao {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.status.parada {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+/* BOTÃO */
+.maquina-card button {
+  margin-top: 12px;
+  width: 100%;
+
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+
+  background: #2563eb;
+  color: white;
+
+  font-weight: 600;
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.maquina-card button:hover {
+  background: #1d4ed8;
+  transform: scale(1.02);
+}
