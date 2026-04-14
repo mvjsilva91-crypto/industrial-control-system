@@ -57,7 +57,7 @@ industrial-dashboard/
 Clone o repositório:
 
 ```bash id="7xw2qk"
-git clone https://github.com/seu-usuario/seu-repositorio.git
+git clone https://github.com/seu-usuario/seu-repositorio.git](https://github.com/mvjsilva91-crypto/industrial-control-system
 ```
 
 Acesse a pasta do projeto:
