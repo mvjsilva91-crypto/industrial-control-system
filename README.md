@@ -27,7 +27,7 @@ Interface vibrante para melhor destaque visual dos dadoss
 * 📊 Monitoramento de RPM em tempo real
 * 🟢 Controle de status da máquina (ligado/desligado)
 * 📈 Interface interativa de dashboard
-* 🎨 Suporte a dois temas
+* 🎨 Duas versões de interface (Dark e Colorida)
 * 📱 Layout responsivo
 * 🏭 Design inspirado em sistemas industriais
 
