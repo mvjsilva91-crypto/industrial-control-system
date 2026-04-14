@@ -90,9 +90,14 @@ O objetivo deste projeto é demonstrar habilidades em desenvolvimento front-end 
 
 ---
 
-## 📸 Preview
+## 📸 Preview - frontend
 
-*Adicione aqui imagens do seu sistema*
+![Visão geral](frontend/docs/2_visao-geral.png)
+
+---
+## 📸 Preview - frontend
+
+![Visão geral](frontend/docs/2_visao-geral.png)
 
 ---
 
