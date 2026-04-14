@@ -63,7 +63,7 @@ git clone https://github.com/mvjsilva91-crypto/industrial-control-system
 Acesse a pasta do projeto:
 
 ```bash id="m4j2vn"
-cd seu-repositorio
+cd https://github.com/mvjsilva91-crypto/industrial-control-system
 ```
 
 Instale e execute cada projeto separadamente:
