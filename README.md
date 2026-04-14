@@ -1,6 +1,6 @@
 # 🏭 Dashboard de Monitoramento Industrial
 
-Sistema moderno de monitoramento industrial desenvolvido com React, focado no acompanhamento em tempo real do desempenho de máquinas, com suporte a **dois temas (dark e colorido)**.
+Sistema de monitoramento industrial em tempo real desenvolvido com React, focado na visualização de dados operacionais e controle de máquinas.
 
 ---
 
