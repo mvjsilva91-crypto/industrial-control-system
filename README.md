@@ -20,6 +20,8 @@ Interface otimizada para ambientes com pouca luz
 * 🌈 **Versão Colorida**  
 Interface vibrante para melhor destaque visual dos dadoss
 
+As versões foram desenvolvidas separadamente para explorar diferentes abordagens de design e experiência do usuário.
+
 ---
 
 ## ⚙️ Funcionalidades
