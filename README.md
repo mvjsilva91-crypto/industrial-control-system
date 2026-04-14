@@ -92,6 +92,12 @@ O objetivo deste projeto é demonstrar habilidades em desenvolvimento front-end 
 
 ---
 
+## 🌐 Demonstração
+
+![Demonstração](frontend/docs/demo.gif)
+
+---
+
 ## 📸 Preview - frontend-dark
 
 ![Visão geral](frontend-dark/docs/2_visao-geral.png)
