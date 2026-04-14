@@ -69,7 +69,7 @@ cd https://github.com/mvjsilva91-crypto/industrial-control-system
 Instale e execute cada projeto separadamente:
 
 ```bash id="o9z3pl"
-cd frontend
+cd frontend-dark
 npm install
 npm run dev
 ```
@@ -77,7 +77,7 @@ npm run dev
 Em outro terminal:
 
 ```bash id="b6t1qx"
-cd frontend-dark
+cd frontend
 npm install
 npm run dev
 ```
