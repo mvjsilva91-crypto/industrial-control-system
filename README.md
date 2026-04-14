@@ -10,15 +10,15 @@ Este projeto simula um painel de controle industrial, permitindo visualizar dado
 
 ---
 
-## 🎨 Temas
+## 🎨 Versões do Sistema
 
-O sistema possui dois modos visuais:
+O projeto possui duas versões independentes da interface:
 
-* 🌙 **Tema Escuro (Dark)**
-  Ideal para ambientes com pouca luz, reduzindo o cansaço visual
+* 🌙 **Versão Dark**  
+Interface otimizada para ambientes com pouca luz
 
-* 🌈 **Tema Colorido**
-  Interface vibrante que melhora a visualização das informações
+* 🌈 **Versão Colorida**  
+Interface vibrante para melhor destaque visual dos dadoss
 
 ---
 
