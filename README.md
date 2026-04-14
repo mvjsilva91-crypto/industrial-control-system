@@ -109,7 +109,7 @@ O objetivo deste projeto é demonstrar habilidades em desenvolvimento front-end 
 ![Visão geral](frontend/docs/2_visao-geral.png)
 
 ---
-## 🌐 Demonstração 
+## 🌐 Demonstração frontend
 
 🎥 Assista ao vídeo: https://drive.google.com/file/d/1TKVPFEuRbyd7ci17Hbzp5AZhcReKAL3B/view?usp=sharing
 
