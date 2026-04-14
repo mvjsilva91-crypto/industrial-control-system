@@ -92,20 +92,26 @@ O objetivo deste projeto é demonstrar habilidades em desenvolvimento front-end 
 
 ---
 
-## 🌐 Demonstração
-
-🎥 Assista ao vídeo: https://drive.google.com/file/d/1TKVPFEuRbyd7ci17Hbzp5AZhcReKAL3B/view?usp=sharing
-
----
 
 ## 📸 Preview - frontend-dark
 
 ![Visão geral](frontend-dark/docs/2_visao-geral.png)
 
+## 🌐 Demonstração frontend-dark
+
+🎥 Assista ao vídeo: https://drive.google.com/file/d/1TKVPFEuRbyd7ci17Hbzp5AZhcReKAL3B/view?usp=sharing
+
+---
+
 ---
 ## 📸 Preview - frontend
 
 ![Visão geral](frontend/docs/2_visao-geral.png)
+
+---
+## 🌐 Demonstração 
+
+🎥 Assista ao vídeo: https://drive.google.com/file/d/1TKVPFEuRbyd7ci17Hbzp5AZhcReKAL3B/view?usp=sharing
 
 ---
 
