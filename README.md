@@ -46,8 +46,8 @@ O sistema possui dois modos visuais:
 
 ```id="k3m8pz"
 industrial-dashboard/
-├── frontend/         # Versão com tema colorido
-└── frontend-dark/    # Versão com tema escuro
+├── frontend-dark/    # Versão com tema escuro 
+└──frontend/         # Versão com tema colorido
 ```
 
 ---
